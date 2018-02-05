@@ -1,0 +1,52 @@
+{
+  "name": "@master/webinfra-frontend-components",
+  "version": "0.6.237",
+  "description": "Nielsen Webapps infrastructure frontend components",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "storybook": "start-storybook -s ./.storybook/static -p 6006",
+    "build-storybook": "build-storybook -s ./.storybook/static -o .out",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "url-loader": "^0.6.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-centered": "3.2.0",
+    "@storybook/addon-console": "^1.0.0",
+    "@storybook/addon-info": "^3.2.4",
+    "@storybook/addon-knobs": "3.2.0",
+    "@storybook/addon-options": "3.2.4",
+    "@storybook/react": "3.2.4",
+    "@storybook/storybook-deployer": "^2.2.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-tape-runner": "^2.0.1",
+    "expose-loader": "^0.7.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "raw-loader": "^0.5.1",
+    "storybook-readme": "^3.0.6",
+    "webpack-merge": "^4.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "storybook-deployer": {
+    "gitUsername": "matanstorybook",
+    "gitEmail": "vlad.mystetskyi@nielsen.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
+  }
+}

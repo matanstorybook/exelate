@@ -1,0 +1,22 @@
+# IDE
+.DS_Store
+.idea/
+.history
+web-ncs-frontend.iml
+
+# build
+build
+
+# tests
+coverage
+.nyc_output
+reports
+.nyc-output
+
+# npm
+npm-debug.log
+node_modules
+
+# yarn
+yarn-error.log
+/storybook-static/
